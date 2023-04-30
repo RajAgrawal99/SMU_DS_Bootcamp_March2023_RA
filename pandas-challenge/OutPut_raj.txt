@@ -1,0 +1,143 @@
+District Summary
+-----------------
+Total number of unique schools	15
+Total students				39,170
+Total budget				24,649,428
+Average math score			78.98
+Average reading score			81.87
+% passing math (the percentage of students who passed math)	74.98
+% passing reading (the percentage of students who passed reading)	85.80
+% overall passing (the percentage of students who passed math AND reading)	65.17
+==============================================================================
+School Summary
+------------------
+School name  / School type
+
+school_name
+Bailey High School       District
+Cabrera High School       Charter
+Figueroa High School     District
+Ford High School         District
+Griffin High School       Charter
+Hernandez High School    District
+Holden High School        Charter
+Huang High School        District
+Johnson High School      District
+Pena High School          Charter
+Rodriguez High School    District
+Shelton High School       Charter
+Thomas High School        Charter
+Wilson High School        Charter
+Wright High School        Charter
+==============================================================================
+Total students
+Bailey High School       4976
+Johnson High School      4761
+Hernandez High School    4635
+Rodriguez High School    3999
+Figueroa High School     2949
+Huang High School        2917
+Ford High School         2739
+Wilson High School       2283
+Cabrera High School      1858
+Wright High School       1800
+Shelton High School      1761
+Thomas High School       1635
+Griffin High School      1468
+Pena High School          962
+Holden High School        427
+==============================================================================
+Total school budget
+Bailey High School       628.0
+Cabrera High School      582.0
+Figueroa High School     639.0
+Ford High School         644.0
+Griffin High School      625.0
+Hernandez High School    652.0
+Holden High School       581.0
+Huang High School        655.0
+Johnson High School      650.0
+Pena High School         609.0
+Rodriguez High School    637.0
+Shelton High School      600.0
+Thomas High School       638.0
+Wilson High School       578.0
+Wright High School       583.0
+
+==============================================================================
+Per student budget
+
+Average math score
+Bailey High School       81.033963
+Cabrera High School      83.975780
+Figueroa High School     81.158020
+Ford High School         80.746258
+Griffin High School      83.816757
+Hernandez High School    80.934412
+Holden High School       83.814988
+Huang High School        81.182722
+Johnson High School      80.966394
+Pena High School         84.044699
+Rodriguez High School    80.744686
+Shelton High School      83.725724
+Thomas High School       83.848930
+Wilson High School       83.989488
+Wright High School       83.955000
+==============================================================================
+Average reading score
+% passing math (the percentage of students who passed math)
+% passing reading (the percentage of students who passed reading)
+% overall passing (the percentage of students who passed math AND reading)
+	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+Bailey High School	District	4976	$3,124,928.00	$628.00	77.048432	81.033963	66.680064	81.933280	54.642283
+Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
+Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
+Ford High School	District	2739	$1,763,916.00	$644.00	77.102592	80.746258	68.309602	79.299014	54.289887
+Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455
+Hernandez High School	District	4635	$3,022,020.00	$652.00	77.289752	80.934412	66.752967	80.862999	53.527508
+Holden High School	Charter	427	$248,087.00	$581.00	83.803279	83.814988	92.505855	96.252927	89.227166
+Huang High School	District	2917	$1,910,635.00	$655.00	76.629414	81.182722	65.683922	81.316421	53.513884
+Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.057551	81.222432	53.539172
+Pena High School	Charter	962	$585,858.00	$609.00	83.839917	84.044699	94.594595	95.945946	90.540541
+Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
+Shelton High School	Charter	1761	$1,056,600.00	$600.00	83.359455	83.725724	93.867121	95.854628	89.892107
+Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
+Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
+Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
+==============================================================================
+Highest-Performing Schools (by % Overall Passing)
+School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
+Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
+Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455
+Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
+Pena High School	Charter	962	$585,858.00	$609.00	83.839917	84.044699	94.594595	95.945946	90.540541
+==============================================================================
+Lowest-Performing Schools (by % Overall Passing)
+School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
+Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
+Huang High School	District	2917	$1,910,635.00	$655.00	76.629414	81.182722	65.683922	81.316421	53.513884
+Hernandez High School	District	4635	$3,022,020.00	$652.00	77.289752	80.934412	66.752967	80.862999	53.527508
+Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.057551	81.222432	53.539172
+
+==============================================================================
+	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+Spending Ranges (Per Student)					
+<$585	83.455399	83.933814	93.460096	96.610877	90.369459
+$585-630	81.899826	83.155286	87.133538	92.718205	81.418596
+$630-645	78.518855	81.624473	73.484209	84.391793	62.857656
+$645-680	76.997210	81.027843	66.164813	81.133951	53.526855
+==============================================================================
+Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+School Size					
+Small (<1000)	83.821598	83.929843	93.550225	96.099437	89.883853
+Medium (1000-2000)	83.374684	83.864438	93.599695	96.790680	90.621535
+Large (2000-5000)	77.746417	81.344493	69.963361	82.766634	58.286003
+==============================================================================
+
+Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+School Type					
+Charter	83.473852	83.896421	93.620830	96.586489	90.432244
+District	76.956733	80.966636	66.548453	80.799062	53.672208
+==============================================================================
