@@ -1,3 +1,0 @@
-Total Votes:  369711
-candidates :  {'Charles Casper Stockham': 85213, 'Diana DeGette': 272892, 'Raymon Anthony Doane': 11606}
-Winner :  Diana DeGette
