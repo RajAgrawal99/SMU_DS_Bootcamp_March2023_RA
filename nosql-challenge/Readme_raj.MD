@@ -12,6 +12,7 @@ nosql-challenge
 # updates are listed 
 
 ## Deliverable 3: Part 3: Exploratory Analysis
+# NoSQL_analysis_starter-Raj.ipynb
 # updates are listed including DF / bar-chart
 
 ## key output are listed as a screen shot in the doc---"Module 12 - nosql-challenge - screen shots v1"
