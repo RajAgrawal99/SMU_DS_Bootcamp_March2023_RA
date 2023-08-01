@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About The Team</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <!-- Our CSS -->
+    
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          height: 100%;
+          min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Container for flexboxes */
+        section {
+          display: -webkit-flex;
+          display: flex;
+        }
+        
+        /* Style the navigation menu */
+        .nav-link {
+            color: #fff !important;
+        }
+        /* Style the list inside the menu */
+        nav {
+          list-style-type: none;
+          padding: 0;
+          color: white
+        }
+        .btn-primary {
+            color: #fff !important;
+            background-color: #ff615a !important;
+            border-color: #ff615a !important;
+        }
+        .btn-primary:hover {
+            color: #fff !important;
+            background-color: #f8544c !important;
+            border-color: #c34113 !important;
+        }
+        .card-container {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap !important;
+            align-items: stretch !important;
+        }
+        .card-header{
+            font-size: larger;
+            font-weight: bold;
+        }
+        /* Style the content */
+        article {
+          -webkit-flex: 3;
+          -ms-flex: 3;
+          flex: 3;
+          background-color: #f1f1f1;
+          padding: 1rem;
+          flex-direction: column
+        } 
+        img {
+            object-fit: contain;
+            height: 300px;
+            width: 300px;
+        }
+        html {
+            height: 100%;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          text-align: center;
+          color: white;
+          margin-top: auto;
+          margin-bottom: auto;
+          height: auto;
+        }
+        a:hover {
+            color: #777 !important;
+        }
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          section {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+          }
+        }
+        </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Wildfires in America</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/plots">Plots</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/resources">Resources
+                    <span class="visually-hidden">(current)</span></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <br>
+    <h2 style="text-align:center">Our Members</h2>
+    <div class="card-container">
+    <article>
+    <div class="card border-primary mb-3">
+        <div class="card-header">Anny Ly</div>
+        <div class="card-body">
+            <img src="{{url_for('static', filename='Ann.jpg')}}" alt="Ann" style="width:100%">
+          <h4 class="card-title"></h4>
+          <p class="card-text"> Ann is a mother of two beautiful girls aged 7 and 11 and the wife of a very wonderful and supportive husband. She has a BS in Biology and is a licensed Nursing Home Administrator. With the ever-changing world of technology, she wanted to change her career toward Data Science, and taking this challenging boot camp was her first step toward a new future. Her hobbies outside of this Bootcamp include gardening, cooking, and reading.</p>
+        </div>
+    </article>
+    <article>
+    <div class="card border-primary mb-3">
+        <div class="card-header">Rob Maysent</div>
+        <div class="card-body">
+            <img src="{{url_for('static', filename='Rob.jpg')}}" alt="Rob" style="width:100%;">
+          <h4 class="card-title"></h4>
+          <p class="card-text"> Rob is a young professional learning about data and how its interpolation can be used to reinvigorate workflow for numerous industries. He hopes one day to work in the cutting-edge industry of machine learning and AI in the hopes of creating new systems to improve our everyday lifestyle through advancements in data science and technology.</p>
+        </div>
+    </article>
+    <article>
+        <div class="card border-primary mb-3">
+            <div class="card-header">Raj Agrawal</div>
+            <div class="card-body">
+                <img src="{{url_for('static', filename='Raj.png')}}" alt="Raj" style="width:100%;">
+              <h4 class="card-title"></h4>
+              <p class="card-text"> Raj is inspired by the audacious journey this SMU data science boot camp takes to see science spin in a new direction. He is proud to be a part of this cohort and to be supporting his team along the way. Raj has travel experience across 45+ countries, spanning 6 continents. He hopes this may help with data visualizations giving context to people and cultural values.</p>
+            </div>
+    </article>
+    <article>
+        <div class="card border-primary mb-3">
+            <div class="card-header">Ryan Johnson</div>
+            <div class="card-body">
+                <img src="{{url_for('static', filename='Ryan.jpg')}}" alt="Ryan" style="width:100%;">
+              <h4 class="card-title"></h4>
+              <p class="card-text"> Born and raised in Nebraska, Ryan was always interested in a grander picture. After 2 years of college in northern Nebraska, he moved to California to continue his education in Behavioral Neuroscience at UCI. Ryan lived in Orange County for 5 years before deciding to move to Dallas, Texas to continue their personal and professional growth. This ultimately led them to join a Data Science Bootcamp with SMU. With 10+ years of customer service and property management-related experience, Ryan hopes to start a new career for themselves in the field of computer science and data analytics. </p>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p style="font-size: 0.75rem">SMU Data Science Bootcamp March 2023</p>
+      </footer>
+</body>
+
+</html>

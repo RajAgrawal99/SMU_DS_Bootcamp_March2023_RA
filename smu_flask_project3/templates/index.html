@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+     <!-- JQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+/* Style the footer */
+ /* Style the navigation menu */
+ .nav-link {
+            color: #fff !important;
+        }
+/* Style the list inside the menu */
+nav {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    }       
+footer {
+    background-color: #777;
+    position: fixed;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.75rem;
+    
+}
+a:hover {
+    color: #777 !important;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    }
+}
+.active, .accordion:hover {
+  background-color: #801100;
+  color: white; 
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bolder;
+  transition: 0.4s;
+  margin: 10px;
+  float: left;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+}
+section {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+}
+</style>
+</head>     
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Wildfires in America</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                    <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/plots">Plots</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about_us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/resources" style="background-color: black;">Resources</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h2 style="text-align:center; font-size: 50px">Our Mission</h2>
+    <div class="card-container" style="margin: 10px;">
+    <div class="card border-primary mb-3" style="border-width: 4px;">
+        <div class="card-header" style="color: black; font-size: xx-large; font-weight: bold; ">Background:</div>
+        <div class="card-body" style= "background-color: #444;">
+            <p style="color: white; text-indent:30px; font-size: large">Together, forests, shrubland, and grassland cover more than half of the land area in the United States. These ecosystems are important resources, both environmentally and economically. Although wildfires occur naturally and play a long-term role in the health of these ecosystems, changing wildfire patterns threaten to upset the existing conditions. Studies have found that unforeseen circumstances, such as climate change, have already led to an increase in wildfire season length, wildfire frequency, and burned area. The wildfire season has lengthened in many areas due to factors including warmer springs, longer summer dry seasons, and drier soils and vegetation. Earlier spring melting and reduced snowfall result in decreased water available during hot summer conditions, which in turn contributes to increased wildfire risk, allowing fires to start more easily and burn hotter. Even with consideration to climate change, our specific datasets focus on other factors—debris burning, lightning, equipment use, campfires, arson, etc.— as they play an important role in wildfire frequency and intensity. All these factors influencing wildfires vary greatly by region and over time, as do precipitation, wind, temperature, vegetation types, and landscape conditions.</p>
+            <p style="color: white; text-indent:30px; font-size: large">Wildfires have the potential to harm property, the surrounding wildlife, and human health. Fire-related threats are increasing, especially as more people live in and around forests, grasslands, and other natural areas. According to the National Oceanic and Atmospheric Administration, between 1980 and 2021 the United States had 20 wildfire events that caused more than $1 billion in damage; 16 of those have occurred since 2000.(1) Over the past few decades, the United States has routinely spent more than $1 billion per year to fight wildfires, including $2.3 billion in 2020.(2) These efforts have resulted in the deaths of more than 1,000 firefighters since 1910.(3) Even in communities far downwind, wildfire smoke has been directly linked to poor air quality that can lead to significant health effects and costs to society (emergency department visits, hospital admissions, and deaths, often due to respiratory ailments).</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 45%; display: flex; flex-direction: column; margin: 10px; float: right; flex-direction: column; background-color: #fac000; border-color: #444; border-width: 5px;">
+        <div class="container-fluid">
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: xx-large;">Call to Action</h4>
+          <p class="card-subtitle mb-2 text-muted" style="color: #FAFAFF !important; font-size: large;">If you see a wildfire but have not been notified by an outside agency, <b style="color:black; text-decoration-line: underline; text-decoration-color: black;">Call 911 Immediately.</b> Never assume that this is being done by another person. You may be the first to notice.</p>
+          <p class="card-text">If wildfires are occurring within several hundred miles of your home, tune to a local station on your radio or television for news, recommendations and warnings. If you are advised to evacuate the area, you should do so immediately, and take your wildfire or emergency supply kit with you. In addition, lock the doors to your home and drive away from the fire. Always be aware of any changes in the direction of the wind and smoke. Alert family or friends of your actions, and let them know your planned route and destination.</p>
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p class="mb-0">"Only you can prevent wildfires."</p>
+            </blockquote>
+            <figcaption class="blockquote-footer" style="color:black">Smokey Bear</figcaption>
+          </figure>
+          <a href="https://www.fema.gov/" class="card-link" style="color: #801100 !important; text-decoration-line: underline;">Federal Emergency Management Agency</a>
+          <a href="https://www.911.gov/calling-911/" class="card-link" style="color: #801100 !important; text-decoration-line: underline;">911.gov</a>
+        </div>
+        </div>
+      </div>
+    <h2 class="container-fluid" style="margin: 10px">Hot Topics -</h2>
+        <button class="accordion">Which state has enountered the most wildfires?</button>
+    <div class="panel">
+        <p>According to the National Interagency Fire Center, California leads the country with the most wildfires and the number of acres burned. Their largest fire thus far, The August Complex fire, was caused by a series of lightning-sparked blazes that ignited in August 2020 and burned 1,032,648 acres in numerous counties. It destroyed 935 structures and caused one death.</p>
+    </div>
+        <button class="accordion">What is the leading cause of wildfires?</button>
+    <div class="panel">
+        <p>According to federal data cited by the National Park Service, humans cause about 85 percent of all wildfires yearly in the United States. Either accidental or intentional, human-related events that can ignite fires range from open burning such as campfires, equipment failure, debris burning, negligent discarding of cigarettes on dry grounds as well as other intentional acts of arson. The latter accounts for one of the most common causes of wildfires.</p>
+    </div>
+        <button class="accordion">How many wildfires occur every year?</button>
+    <div class="panel">
+        <p>Since 1983, the National Interagency Fire Center has documented an average of approximately 70,000 wildfires per year. While this number is already staggering, it is estimated that 24 percent of all fires are not properly reported and/or recorded. </p>
+    </div>
+        <button class="accordion">How many acres are burned per year on average due to wildfires?</button>
+    <div class="panel">
+        <p style="padding-bottom: 50px;">It is estimated that nearly 4,000,000+ acres burn every year with more than 60,000 reported fires. It has been observed that this number is seeing a steady increase as the years go on. (To put it into perspective, that is about 6,250 sq. miles, or roughly equivalent to 3,025,000 football fields worth of damage.)</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+    </script>
+    <!--<div class="card bg-warning mb-3" style="max-width: 40rem; float: center; margin: 1rem">
+        <div class="card-header">Call to Action</div>
+        <div class="card-body">
+            <h4 class="card-title">Resources</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>-->
+      
+    <footer>
+        <p style="font-size: 0.75rem;">SMU Data Science Bootcamp March 2023</p>
+        </footer>
+</body>
+    
+</html>

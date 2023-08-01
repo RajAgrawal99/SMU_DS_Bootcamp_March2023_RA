@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resources</title>
+
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Wildfires in America</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/plots">Plots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/resources">Resources
+                <span class="visually-hidden">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<h3 class="resources-title">Resources used to power our project:</h3>
+<div class="accordion-container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Wildfire Dataset
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+          <div class="accordion-body">
+            We are utilizing the following data as the source for our visualizations: <a class="data-link" href="https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes" target="_blank">https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            Leaflet Heatmap Plugin
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            We have utilized the following plugin for our leaflet map to add a heatmap layer: <a class="heat-link" href="https://github.com/Leaflet/Leaflet.heat" target="_blank">https://github.com/Leaflet/Leaflet.heat</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            HTML Resources
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            We have utilized the available template HTML elements from the bootswatch theme journal found here: <a class="theme-link" href="https://bootswatch.com/journal/" target="_blank">https://bootswatch.com/journal/</a>
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            NOAA (National Oceanic and Atmospheric Administration)
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Billion-dollar weather and climate disasters. Accessed June 2022. <a class="theme-link" href="www.ncei.noaa.gov/access/billions" target="_blank">www.ncei.noaa.gov/access/billions</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            NIFC (National Interagency Fire Center)
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          2022. Historical wildland fire information: Federal firefighting costs: Suppression only (1985–2020).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+            NIFC (National Interagency Fire Center)
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          2019. Wildland fire fatalities by year (1910–2017).
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>SMU Data Science Bootcamp March 2023</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
