@@ -1,0 +1,51 @@
+<!-- inspired code by instructor (Alex B) SMU DS Leaflet class -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaflet Step-1</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <h1>Earthquake Map</h1>
+  <p>Use the filter below to choose the time frame for your earthquakes. All data sourced from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">USGS</a>.</p>
+
+  <select id="earthquake_filter" onchange="clickListener()">
+    <option value="hour">Past Hour</option>
+    <option value="day" selected>Past Day</option>
+    <option value="week">Past Week</option>
+    <option value="month">Past Month</option>
+  </select>
+  <br>
+  <br>
+
+  <!-- The div that holds our map -->
+  <div id="map_container">
+    <div id="map"></div>
+  </div>
+
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+
+</html>
