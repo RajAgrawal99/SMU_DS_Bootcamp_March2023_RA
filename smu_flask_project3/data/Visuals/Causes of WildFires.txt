@@ -1,0 +1,14 @@
+	Causes of Wild Fires	# of Wild fires
+0	Lightning	5280
+1	Debris Burning	4074
+2	Miscellaneous	3477
+3	Arson	2359
+4	Equipment Use	1799
+5	Missing/Undefined	1384
+6	Campfire	544
+7	Children	467
+8	Powerline	352
+9	Smoking	351
+10	Railroad	168
+11	Fireworks	154
+12	Structure	41
