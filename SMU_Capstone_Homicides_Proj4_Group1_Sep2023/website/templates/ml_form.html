@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>AboutUs</title>
+
+    <style>
+      ul.navbar {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              background-color: #333;
+              overflow: hidden;
+          }
+  
+      ul.navbar li {
+              float: left;
+          }
+  
+      ul.navbar li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+  
+      ul.navbar li a:hover {
+              background-color: #555;
+          }
+
+
+      /* .container {
+            width: 300px;
+            margin: 20px;  
+            border: 1px solid #ccc;  
+            padding: 10px;  
+            float: left;  
+          } */
+
+
+
+
+    </style>
+
+
+    <!--Boostrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    
+    <!-- our css -->
+    <link rel="stylesheet" type="text/css" href="static/css/style_1.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- logic.js -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+</head>
+
+<body>
+
+
+  <ul class="navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about_us">About Us </a></li>
+    <li><a href="/tableau">Homicide by City</a></li>
+    <li><a href="/tableau1">Demographic</a></li>
+    <li><a href="/datatable">Data Table</a></li>
+     <li><a href="/resources">Resources</a></li>
+    <li><a href="/df1_profile">Data Profile</a></li>
+  </ul>
+
+  <body>
+
+
+    <div class="container" >
+        <p>The form below uses Homicde data between the years 2012-2017.The input parameters:
+            Sex,Weekday,Population,Season,Age,Month,Year,City,Race,State, will predict if an arrest will be made in the Homicide case.
+            Note Cities with two inputs( ex. Fort_Worth) need an underscore between the names. 
+            All other inputs that are non-integers must be capatilized.
+        </p>
+    </div>
+</body>
+
+  <hr style="color:lightgray; border-width: 3px;">
+    <div class="container">
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Homicide Arrest Prediction</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-form-label" for="sex">Sex</label>
+                            <input type="text" class="form-control" value="Male" id="sex">
+                                <!-- <select id="sex">
+                                    <option value="1">Female</option>
+                                    <option value="0">Male</option>
+                                </select> -->
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="population">Population</label>
+                            <input type="text" class="form-control" value="542030" id="population">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="age">Age</label>
+                            <input type="text" class="form-control" value="25" id="age">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="year">Year</label>
+                            <input type="text" class="form-control" value="2016" id="year">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="race">Race</label>
+                            <input type="text" class="form-control" value="Hispanic" id="race">
+                            <!-- <select id="race">
+                                <option value="1">Asian</option>
+                                <option value="2">Black</option>
+                                <option value="3">Hispanic</option>
+                                <option value="4">White</option>
+                                <option value="5">Other</option>
+                            </select> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-form-label" for="weekday">Weekday</label>
+                            <input type="text" class="form-control" value="Sunday" id="weekday">
+                            <!-- <select id="weekday">
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                                <option value="7">Sunday</option>
+                            </select> -->
+
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="season">Season</label>
+                            <input type="text" class="form-control" value="Winter" id="season">
+                            <!-- <select id="season">
+                                <option value="1">Winter</option>
+                                <option value="2">Summer</option>
+                                <option value="3">Spring</option>
+                                <option value="4">Fall</option>
+                            </select> -->
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="month">Month</label>
+                            <input type="text" class="form-control" value="January" id="month">
+                            <!-- <select id="month">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select> -->
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="city">City</label>
+                            <input type="text" class="form-control" value="Fort_Worth" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="state">State</label>
+                            <input type="text" class="form-control" value="TX" id="state">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary" id="filter">Arrest Prediction!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color:lightgray; border-width: 3px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="output"></h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

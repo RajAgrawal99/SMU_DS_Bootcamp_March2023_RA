@@ -1,0 +1,12 @@
+
+/* added a background image for home */
+body {
+    background-image: url("anthony1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 300px;
+    width: 300px; 
+    /* backdrop-filter: blur(5x); */
+      }
+

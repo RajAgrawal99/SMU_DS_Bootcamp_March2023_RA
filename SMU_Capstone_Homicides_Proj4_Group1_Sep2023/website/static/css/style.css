@@ -1,0 +1,75 @@
+/* #map
+{
+  height: 750px;
+}
+p {
+  color: black; /* Change to your desired font color */
+/* } */
+
+
+.filter-select {
+  font-size: 24px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* setup div sections  */
+div.content{
+  
+  height: 150px;
+  width: 150px;
+  border: 5px blue;
+  float: left;
+  margin: 20px;
+}
+div#first{
+  background-color: white;
+}
+
+/* Nave bar style  */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #555;
+}
+
+/* background video */
+#bgvideo {
+  position:relative;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content {
+    position:fixed;
+    bottom:0;
+    width:100%; 
+    background-color: rgba(177, 195, 184, 0.81);
+    color: white;
+    height:200px;
+    font-size: 15px;
+} 

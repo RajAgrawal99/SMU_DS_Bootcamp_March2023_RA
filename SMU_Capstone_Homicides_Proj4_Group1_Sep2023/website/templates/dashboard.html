@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anthony Bourdain Shows</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- added bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  
+   
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+    <!-- Marker cluster JavaScript code -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+  
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+  
+    <!-- Marker cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+    <!-- added bootswatch -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/united/bootstrap.min.css" integrity="sha384-JW3PJkbqVWtBhuV/gsuyVVt3m/ecRJjwXC3gCXlTzZZV+zIEEl6AnryAriT7GWYm" crossorigin="anonymous"> -->
+   
+     <!-- added css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<!-- webpage style and buttons for nave bar -->
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+              <a class="nav-link active" href="/">
+              <button type="button" class="btn btn-outline-dark" fdprocessedid="e12od" href="/">Home</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_us">
+              <button type="button" class="btn btn-outline-dark" fdprocessedid="e12od" href="/about_us">About Us</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard">
+                <button type="button" class="btn btn-outline-dark" fdprocessedid="e12od" href="/dashboard">Dashboard</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/df_profile">
+                <button type="button" class="btn btn-outline-dark" fdprocessedid="e12od" href="/df_profile">Data Profile</button>
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="/resources">
+                <button type="button" class="btn btn-outline-dark" fdprocessedid="e12od" href="/resources">Resources</button>
+              </a>
+            </li>   
+        </div>
+        <!-- format the filter for the viz's -->
+        </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+          
+            <h1>Anthony Bourdain Dashboard</h1>
+            <br/>
+            <div class="card text-primary mb-3">
+            <div class="card-body">
+                  <h1 class="card-title">Anthony Bourdain Shows</h1>
+                  <p class="card text-primary">Use the filter below to select the interactive charts to explore the dataset</p>
+                  <select id="show_dropdown", onchange = 'doWork()',id="filter" class="filter-select">
+                      <option>All</option>
+                      <option selected>No Reservations</option>
+                      <option>Parts Unknown</option>
+                      <option>A Cook's Tour</option>
+                      <option>The Layover</option>
+                    
+                </select>
+                  
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        <div class="row">
+        
+          <div class="col-md-8">
+            <div id="bar"></div>
+          </div>
+          <div class="col-md-4">
+            <div id="pie"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="map_container"></div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="static/js/plots.js"></script>
+  </body>
+</html>
