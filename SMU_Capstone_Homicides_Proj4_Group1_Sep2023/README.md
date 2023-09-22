@@ -1,5 +1,6 @@
-# SMU-Project-4---Homicide
-Capstone Project
+# SMU-Project-4---Homicide In The Past Decade (2007-2017)
+
+![image](https://github.com/AnnLy2023/SMU-Project-4---Homicide/assets/129100456/e9eb0b93-3a0e-4269-991c-7cd868012373)
 
 # Homicides Over the Past Decade
 
@@ -25,3 +26,6 @@ The dataset used in this project was sourced from The Washington Post, encompass
 - **John:** Homicides are always a tragic occurrence, and I believed that gaining a better understanding of which populations are most affected would help us address this issue more effectively and protect those demographics.
 
 Please note that this README provides an overview of our project, and more detailed information can be found in our full project documentation and presentation.
+
+
+Visit our website for more information at : http://datadan4310.pythonanywhere.com/
